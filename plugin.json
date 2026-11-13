@@ -1,0 +1,9 @@
+{
+  "name": "GA4 Streaming",
+  "description": "Set up streaming of Google Analytics 4 data to Google BigQuery.",
+  "delivery": {
+    "type": "remote",
+    "url": "https://bi-plugins.owox.com/streaming/"
+  },
+  "credentials": []
+}
