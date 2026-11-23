@@ -22,7 +22,7 @@ OWOX BI offers two types of event-based streaming: **Client-side** and **Server-
 |   | Client-Side Streaming | Server-Side Streaming |
 | --- | --- | --- |
 | **Use cases:** | Overcoming the limitations of GA4 native export.<br>Track user behavior across multiple domains. | Overcoming the limitations of GA4 native export.<br>Bypass limitations in tracking traffic sources and transactions, such as those imposed by ITP restrictions on Apple devices.<br>Bypass AdBlockers for more reliable data collection. |
-| **`[ouid](https://www.owox.com/docs/getting-started/consumption-units/)` based on:** | Third-party cookies. | First-party cookies. |
+| **[`ouid`](https://github.com/OWOX/streaming-plugin/blob/main/docs/consumption-units.md#how-owox-bi-calculates-unique-users) based on:** | Third-party cookies. | First-party cookies. |
 | **Setup steps:** | Create the Streaming following the instructions below. | First, create the Streaming using the instructions below. Then, contact our support team at [bi@owox.com](mailto:bi@owox.com) to switch from Client-Side to Server-Side streaming. |
 
 ### Step-by-step setup
