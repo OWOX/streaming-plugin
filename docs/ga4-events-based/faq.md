@@ -249,7 +249,7 @@ Proper configuration is essential when using multiple Streamings in OWOX BI to e
 
 Setting up multiple Streamings that write to the same dataset can lead to inflated data consumption calculations. Here's why:
 
-1.  **Independent Calculations:** OWOX BI [calculates data consumption separately for each Streaming instance](https://www.owox.com/docs/getting-started/consumption-units/).
+1.  **Independent Calculations:** OWOX BI [calculates data consumption separately for each Streaming instance](https://github.com/OWOX/streaming-plugin/blob/main/docs/consumption-units.md#how-unique-users-are-calculated-in-owox-bi-projects-with-more-than-one-streaming).
 2.  **Data Duplication:** Writing to the same dataset causes overlapping data entries, leading to duplicate counts.
 
 For instance, if Streaming #1 and Streaming #2 each write 1,000 unique `owox.user_id` entries daily to the same dataset, OWOX BI will count these entries twice, resulting in an inflated consumption total of 4,000 instead of 2,000.
