@@ -30,3 +30,4 @@ Set up streaming of Google Analytics 4 data to Google BigQuery right inside OWOX
 
 - [OWOX tag for GTM Server-Side](docs/gtm-server-side-tag.md)
 - [Service-level agreement](docs/service-level-agreement.md)
+- [Transferring to and storing data in the EU location](docs/eu-data-location.md)
