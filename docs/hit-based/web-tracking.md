@@ -26,27 +26,27 @@ To create an OWOX BI hit-based web streaming take the following steps:
 
 **Step 1.** On the [Workspace page](https://bi.owox.com/ui/app/none/workspace), click the ‘**New**’ button and select the Streaming option in a drop-down menu:
 
-![01-nnnew.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/01/public)
+![01-nnnew.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/01/public)
 
 Or, if your workspace page is empty, you will see a screen with three major blocks. Click the ‘**\+ New streaming**’ button.
 
-![02-nnnew.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/02/public)
+![02-nnnew.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/02/public)
 
 **Step 2**. As a streaming type, select ‘**Hit-based web streaming**’:
 
-![03-nnnew.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/03/public)
+![03-nnnew.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/03/public)
 
 And click the '**Create & Setup**' button to proceed to the next step.
 
-**Step 3**. Provide access to Google Analytics:![Create\_a\_Pipeline\_3.\_Provide\_access\_to\_GA.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/04/public)
+**Step 3**. Provide access to Google Analytics:![Create\_a\_Pipeline\_3.\_Provide\_access\_to\_GA.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/04/public)
 
 **Step 4**. Select the Google Analytics property and view as the data source.
 
 Here, specify the Google Analytics view you want to gather data to. You need to have **Edit** [permission](https://support.google.com/analytics/answer/2884495?hl=en) for this Google Analytics property.
 
-Note that you can set up _only one_ pipeline per property.![Create\_a\_Pipeline\_4.Select\_GA\_view.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/05/public)
+Note that you can set up _only one_ pipeline per property.![Create\_a\_Pipeline\_4.Select\_GA\_view.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/05/public)
 
-**Step 5**. Provide access to the Google BigQuery account you want to upload Google Analytics data to:![Create\_a\_Pipeline\_5.\_Provide\_Access\_to\_BQ.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/06/public)
+**Step 5**. Provide access to the Google BigQuery account you want to upload Google Analytics data to:![Create\_a\_Pipeline\_5.\_Provide\_Access\_to\_BQ.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/06/public)
 
 **Step 6**. Select a Google BigQuery dataset.
 
@@ -54,13 +54,13 @@ First, select the Google BigQuery project that contains the dataset you want to 
 
 If needed, you can create a new dataset right here.
 
-You can set up _only one_ OWOX BI pipeline for each BigQuery dataset. Creating several pipelines for one dataset may cause the hit data to be overwritten.![Create\_a\_Pipeline\_6.Select\_BQ\_dataset.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/07/public)
+You can set up _only one_ OWOX BI pipeline for each BigQuery dataset. Creating several pipelines for one dataset may cause the hit data to be overwritten.![Create\_a\_Pipeline\_6.Select\_BQ\_dataset.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/07/public)
 
 **Step 7**. Integrate the tracking code on your website. 
 
 The method of implementing the tracking code depends on your project. Read about the tracking with Google Tag Manager, analytics.js, Measurement Protocol, Tealium IQ, and AMP pages, Android and iOS apps tracking in the [list of the tracking code implementation methods](https://github.com/OWOX/streaming-plugin/blob/main/docs/hit-based/set-up-data-collection.md).
 
-Find it on the created pipeline's page: **Settings** > **JavaScript code for hit and session data collection**:![Pipeline\_Tracking\_Code\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/08/public)
+Find it on the created pipeline's page: **Settings** > **JavaScript code for hit and session data collection**:![Pipeline\_Tracking\_Code\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/08/public)
 
 Done. The Google Analytics Real-Time Data → Google BigQuery streaming pipeline is all set.
 
@@ -80,7 +80,7 @@ The first "owoxbi\_sessions" table with session data will appear in Google BigQu
 
 You can always turn off or on the session data collection using the switcher in the **Settings** tab on the pipeline page. Note that if you've turned the session data collection off, and then turned it on later, the historical data won't be collected — OWOX BI will upload session data for the previous day only.
 
-![Session\_data\_collection\_toggle\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/09/public)
+![Session\_data\_collection\_toggle\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/09/public)
 
 ### Advanced settings
 
@@ -91,7 +91,7 @@ You can upload from Google Ads to BigQuery the data on traffic sources in the ca
 >   
 > If you use both auto-tagging and manual tagging in your Google Ads campaigns, read [this article](https://github.com/OWOX/streaming-plugin/blob/main/docs/hit-based/faq.md#which-values-will-be-recorded-to-the-hit-and-session-data-tables-when-gclid-auto-tagging-and-manual-utm-tagging-data-overlap-in-google-ads).
 
-![Sessions\_Google\_Ads\_setup\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/10/public)
+![Sessions\_Google\_Ads\_setup\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/10/public)
 
 The setup guide is in the article "[Collect raw data from Google Ads campaigns with auto-tagging](https://github.com/OWOX/streaming-plugin/blob/main/docs/hit-based/web-tracking/setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging.md)".
 
@@ -100,9 +100,9 @@ The setup guide is in the article "[Collect raw data from Google Ads campaigns w
 
 **Referral exclusion list** helps you keep accurate cross-subdomain tracking and fight off the referral spam. If you have a referral exclusion list in Google Analytics, just copy it to OWOX BI.
 
-Read the details in [this article](https://github.com/OWOX/streaming-plugin/blob/main/docs/hit-based/web-tracking.md#creating-a-referral-exclusion-list-for-session-data-collection).![Domains2eng.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/11/public)
+Read the details in [this article](https://github.com/OWOX/streaming-plugin/blob/main/docs/hit-based/web-tracking.md#creating-a-referral-exclusion-list-for-session-data-collection).![Domains2eng.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/11/public)
 
-You can also set the **campaign and session** **timeout** (the time periods after which a campaign or a session is automatically terminated) and collect data on the visited **page type** to the `hits.pageType` field, set the corresponding fields in the session data collection settings:![Campaign\_timeout\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/12/public)
+You can also set the **campaign and session** **timeout** (the time periods after which a campaign or a session is automatically terminated) and collect data on the visited **page type** to the `hits.pageType` field, set the corresponding fields in the session data collection settings:![Campaign\_timeout\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/12/public)
 
 ### Setting up session data collection in OWOX BI for the users who have session data collection based on Google Analytics enabled
 
@@ -112,7 +112,7 @@ You can also set the **campaign and session** **timeout** (the time periods a
 
 3\. Select **Based on hit data**:
 
-![Session\_data\_settings\_GA\_\_1\_.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/13/public)
+![Session\_data\_settings\_GA\_\_1\_.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/13/public)
 
 > **Important:**  
 > After that, you won’t be able to turn on the old based on Google Analytics algorithm in the interface, and OWOX BI will begin collecting the "owoxbi\_sessions" tables only. If you want to collect both types of tables to compare the algorithms, write us at [bi@owox.com](mailto:bi@owox.com), and we’ll turn on the “session\_streaming\_” tables collection for you.  
@@ -120,7 +120,7 @@ You can also set the **campaign and session** **timeout** (the time periods a
 
 4\. In the **Settings** tab, copy the updated tracking code and implement it on your website using one of the [integration methods](https://github.com/OWOX/streaming-plugin/blob/main/docs/hit-based/set-up-data-collection.md):
 
-![Data\_collection\_code.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/14/public)
+![Data\_collection\_code.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/14/public)
 
 Done. Now session data will be collected to the  "owoxbi\_sessions" in Google BigQuery.
 
@@ -137,7 +137,7 @@ If you use the OWOX BI algorithm to collect session data based on non-sampled hi
 
 > **Important:**  
 > Your referral exclusion lists in OWOX BI and Google Analytics must be identical, otherwise there may be discrepancies in collected session data.  
-> Find your Google Analytics referral exclusion list by going to: **Admin** → **Property** → **Tracking** **info** → **Referral Exclusion List**:![image14.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/15/public)
+> Find your Google Analytics referral exclusion list by going to: **Admin** → **Property** → **Tracking** **info** → **Referral Exclusion List**:![image14.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/15/public)
 
 ### Why you might need to exclude referrals
 
@@ -151,22 +151,22 @@ If you use the OWOX BI algorithm to collect session data based on non-sampled hi
 
 1\. On your pipeline page, click **Change settings**:
 
-![Session\_data\_collection\_switcher\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/16/public)
+![Session\_data\_collection\_switcher\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/16/public)
 
 2\. In the **Referral exclusion list** section, click the edit icon:
 
-![Session\_data\_collection\_settings-1.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/17/public)
+![Session\_data\_collection\_settings-1.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/17/public)
 
 3\. Type in or paste domain names as `example.com`. Use commas to separate them from one another. These domains won't be tracked as referrals and that won't start new sessions.
 
-![Domains2eng.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/18/public)
+![Domains2eng.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/18/public)
 
 > **Note:**  
 > The referral exclusion list uses CONTAINS matching. This means all subdomains containing the domain name will not be tracked as referrals. For example, if you exclude the `example.com` domain, the `start.example.com` subdomain will be excluded too.
 
 4\. Click **Save list**. The added domains will appear on the list.
 
-You can delete the domains from the list using the **Delete** button to the right of the domain name: ![Domains3eng.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/19/public)
+You can delete the domains from the list using the **Delete** button to the right of the domain name: ![Domains3eng.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/19/public)
 
 To apply the deletion, click **Save list**.
 
@@ -186,8 +186,8 @@ To do this:
 2.  Create one or more **Custom JavaScript** variables with the code specifically written for collecting these data from the website.  
     **Note:** The JavaScript code in these variables depends solely on the data you want to get from the website, so writing this code must be done from your side.
 3.  Create a separate tag that will track the values of these variables:  
-    ![customTask\_code\_GBQ\_only\_value\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/20/public)
-4.  Add to the tag you've created a Custom Dimension for each of the custom variables you want to track and set values for these dimensions in the **Dimension Value**:![customTask\_code\_GBQ\_only\_custom\_dimension\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/21/public)
+    ![customTask\_code\_GBQ\_only\_value\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/20/public)
+4.  Add to the tag you've created a Custom Dimension for each of the custom variables you want to track and set values for these dimensions in the **Dimension Value**:![customTask\_code\_GBQ\_only\_custom\_dimension\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/21/public)
 5.  Save the tag and publish the container.
 
 Done! Now, this tag will be sending the special values to your Google BigQuery.
@@ -198,7 +198,7 @@ Email and telephone dimensions are not supported by Google Analytics, but you ca
 
 1\. If you are using Google Tag Manager, make the following settings to collect email and telephone data to BigQuery
 
-![](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-web-tracking/22/public)
+![](https://cdn.owox.com/plugins/streaming/hit-based-web-tracking/22/public)
 
 The **Value** fields here must contain variables to which custom dimensions collect phone numbers and emails from the website.
 

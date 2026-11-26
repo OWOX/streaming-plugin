@@ -21,7 +21,7 @@ OWOX BI Streaming customers are typically familiar with Google services such as 
 
 The Google Tag Manager serves as the key integration tool, managing consent handling and ensuring the correct tags are triggered at the right time.
 
-![00.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/01/public)
+![00.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/01/public)
 
 ## Before You Start
 
@@ -46,7 +46,7 @@ Research and choose a technical solution to request and record the user’s cons
 
 CMPs are designed to display a consent popup/window, record the user’s consent choice, and allow tools like Google Tag Manager to dynamically block or allow tags based on this consent. A CMP provides a cookie popup/window for website visitors where they can: **Accept all**, **Reject all**, or **Customize** their choice.
 
-![01.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/02/public)
+![01.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/02/public)
 
 > **IMPORTANT**  
 > The consent request must take top priority during page loading and should be implemented first. All other actions (e.g., sending analytics data, setting advertising cookies, or others) depend on the user’s consent and cannot run until permission is granted.
@@ -59,15 +59,15 @@ Each option has its pros and cons. The choice depends on your context and availa
 
 **2.1.1.** Open the ‘**Admin**’ tab and navigate to ‘**Container Settings**’.
 
-![02.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/03/public)
+![02.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/03/public)
 
 **2.1.2.** In the popup that appears, enable the checkbox ‘**Enable consent overview**’.
 
-![03.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/04/public)
+![03.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/04/public)
 
 **2.1.3.** **Save** these changes.
 
-![04.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/05/public)
+![04.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/05/public)
 
 ### Step 2.2. Updating Consent Settings for the ‘OWOX GA4 Configuration’ Tag
 
@@ -81,14 +81,14 @@ There are two configuration options depending on the behavior you want when the 
 1.  Open **Advanced settings**.
 2.  Locate the ‘**Consent settings**’ section.
 3.  Select the option ‘**Not set**’ or ‘**No additional consent required**’.  
-    ![05.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/06/public)
+    ![05.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/06/public)
 
 **🔴 Option 2: Do not send data to OWOX BI Streaming until consent is provided:**
 
 1.  Open **Advanced settings**.
 2.  Locate the ‘**Consent settings**’ section.
 3.  Select the option ‘**Require additional consent for tag to fire**’ and choose ‘**analytics\_storage**’  
-    ![06.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/07/public)
+    ![06.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/07/public)
 
 ### Step 2.3. Creating New Variables in Google Tag Manager
 
@@ -96,7 +96,7 @@ There are two configuration options depending on the behavior you want when the 
 
 For example, if you are using CMP **OneTrust**, this cookie is called ‘**OptanonConsent**’. In our example, we create a variable named ‘**OneTrust – OptanonConsent**’ and configure it as shown in the screenshot below.
 
-![07.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/08/public)
+![07.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/08/public)
 
 **2.3.2.** Create variables for each consent type (**ad\_storage**, **analytics\_storage**, **functionality\_storage**, **personalization\_storage**, **security\_storage**).
 
@@ -104,7 +104,7 @@ For example, we create a variable named ‘**CM\_analytics\_storage**’, where 
 
 Set the default value to `denied`. If the Regular Expression matches the main variable ‘**OneTrust – OptanonConsent’**, the variable ‘**CM\_analytics\_storage**’ will update its default value to `granted`. The variable configuration example is shown in the screenshot below.
 
-![08.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/09/public)
+![08.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/09/public)
 
 Repeat this process to create variables for the other consent types.
 
@@ -112,83 +112,83 @@ Repeat this process to create variables for the other consent types.
 
 **2.4.1.** Open the [Consent Mode (Google + Microsoft tags) template](https://tagmanager.google.com/gallery/#/owners/gtm-templates-simo-ahava/templates/consent-mode) and click ‘**Add to workspace**’.
 
-![09.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/10/public)
+![09.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/10/public)
 
 Alternatively, you can go to the **Templates** page and click the ‘**Search Gallery**’ button in the ‘**Tag Templates**’ section.
 
-![10.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/11/public)
+![10.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/11/public)
 
 Use the search term ‘**simo**’ to find ‘**Consent Mode (Google + Microsoft tags)**’ by gtm-templates-simo-ahava.
 
-![11.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/12/public)
+![11.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/12/public)
 
 Click ‘**Add to workspace**’.
 
-![12.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/13/public)
+![12.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/13/public)
 
 **2.4.2.** Confirm your action to **add the template** to your Workspace.
 
-![13.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/14/public)
+![13.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/14/public)
 
 ### Step 2.5. Create a New Tag ‘Default Consent Mode Tag’
 
 **2.5.1.** Navigate to the ‘**Tags**’ page and click the ‘**New**’ button.
 
-![14.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/15/public)
+![14.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/15/public)
 
 **2.5.2.** Select the Tag Type – ‘**Consent Mode (Google + Microsoft tags)**’ which is a Simo Ahava template.
 
-![15.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/16/public)
+![15.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/16/public)
 
 **2.5.3.** Name the tag ‘**Default Consent Mode Tag**’.
 
-![16.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/17/public)
+![16.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/17/public)
 
 **2.5.4.** Set the ‘**Consent Command**’ to ‘**Default**’.
 
-![17.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/18/public)
+![17.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/18/public)
 
 **2.5.5.** Set ‘**Wait for update**’ to **1000 milliseconds**.
 
-![18.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/19/public)
+![18.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/19/public)
 
 **2.5.6.** Set ‘**Regions**’ to ‘**All**’.
 
-![19.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/20/public)
+![19.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/20/public)
 
 **2.5.7.** In the ‘**Consent Settings**’ section, fill in the fields for ‘**Required for Google services**’ and ‘**Other signals**’ with the values of the previously created variables, as shown in the screenshot below.
 
-![20.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/21/public)
+![20.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/21/public)
 
 **2.5.8.** In the ‘**Other Settings**’ section, enable the checkboxes ‘**Pass Ad Click Information…**’ and ‘**Push dataLayer Event**’, as shown in the screenshot below.
 
-![21.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/22/public)
+![21.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/22/public)
 
 **2.5.9.** Select the trigger ‘**Consent Initialization – All Pages**’.
 
-![22.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/23/public)
+![22.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/23/public)
 
 **2.5.10.** Click the ‘**Save**’ button.
 
-![23.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/24/public)
+![23.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/24/public)
 
 ### Step 2.6 (Optional). Verify That Everything Is Set Up Correctly
 
 **2.6.1.** On the **Workspace** screen, open **Preview**.
 
-![24.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/25/public)
+![24.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/25/public)
 
 **2.6.2.** When your website loads in Preview mode, select ‘**Consent Default**’ in the left sidebar. In the ‘**Output**’ section under the ‘**Consent**’ tab, you should see the current consent state as `denied`.
 
-![25.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/26/public)
+![25.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/26/public)
 
 **2.6.3.** Next, in the sidebar, select ‘**gtm\_consent\_default**’ (this is the event that pushed the default consent settings into the dataLayer, as we enabled the necessary checkbox in Step 2.5.8). On the ‘**Consent**’ tab, a new column called ‘**Current State**’ will appear, where all values should also be `denied`.
 
-![26.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/27/public)
+![26.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/27/public)
 
 **2.6.4.** Another check can be performed on the **Summary** page. Open **Hit Details** and locate the `gcs` parameter in the table of parameters; its value should be `G100`.
 
-![27.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/28/public)
+![27.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/28/public)
 
 ## Stage #3. Updating Consent State
 
@@ -198,15 +198,15 @@ Users can change their consent choice at any time, so we need to implement a log
 
 **3.1.1.** To do this quickly, open the ‘**Default Consent Mode Tag**’ and duplicate it.
 
-![28.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/29/public)
+![28.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/29/public)
 
 **3.1.2.** Rename the new tag to ‘**Update Consent Mode Tag**’.
 
-![29.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/30/public)
+![29.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/30/public)
 
 **3.1.3.** In the ‘**Consent Command**’ field, select ‘**Update**’ instead of ‘Default’.
 
-![30.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/31/public)
+![30.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/31/public)
 
 **3.1.4.** There’s no need to change the variable list. Ensure it remains the same as in the ‘**Default Consent Mode Tag**’.
 
@@ -214,27 +214,27 @@ Users can change their consent choice at any time, so we need to implement a log
 
 **3.2.1.** Open the triggers list and click the “**+**” icon in the top-right corner.
 
-![31.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/32/public)
+![31.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/32/public)
 
 **3.2.2.** Name the new trigger: ‘**Consent Banner Closed Trigger**’.
 
-![32.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/33/public)
+![32.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/33/public)
 
 **3.2.3.** Choose the trigger type: **Custom Event**.
 
-![33.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/34/public)
+![33.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/34/public)
 
 **3.2.4.** Enter the Event Name: ‘**ConsentBannerClosed**’.
 
-![34.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/35/public)
+![34.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/35/public)
 
 **3.2.5.** **Save** the trigger.
 
-![35.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/36/public)
+![35.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/36/public)
 
 ### Step 3.3. Save the configuration for the new ‘Update Consent Mode Tag’
 
-![36.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/37/public)
+![36.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/37/public)
 
 ### Step 3.4 (Optional). Verify That Everything Is Set Up Correctly
 
@@ -242,23 +242,23 @@ Users can change their consent choice at any time, so we need to implement a log
 
 **3.4.2.** In the left sidebar, locate the ‘**ConsentBannerClosed**’ event. This is the event triggered after closing the consent banner.
 
-![37.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/38/public)
+![37.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/38/public)
 
 **3.4.3.** In the ‘**Tags Fired**’ section, click on the name of the tag ‘**Update Consent Mode Tag**’.
 
-![38.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/39/public)
+![38.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/39/public)
 
 **3.4.4.** In the list of properties, you will see that the variables created in Step 2.3.2 are passed here. To view the actual values of these variables, select ‘**Display Variables as Values**’ in the top menu.
 
-![39.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/40/public)
+![39.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/40/public)
 
 **3.4.5.** The variable values should be `granted`, confirming that everything worked correctly.
 
-![40.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/41/public)
+![40.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/41/public)
 
 **3.4.6.** Lastly, check the status on the ‘**Consent**’ tab. The table will display the default status and the updated status. As shown in the screenshot below, everything was processed correctly.
 
-![41.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/42/public)
+![41.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-consent-mode-setup-for-owox-bi-streaming-within-google-tag-manager/42/public)
 
 ## Troubleshooting
 

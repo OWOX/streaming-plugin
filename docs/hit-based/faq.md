@@ -29,19 +29,19 @@ A user created three sessions during a single day with the next source/medium va
 
 The user completed an order on a website during _Session 2._ Information about this transaction might be sent to Google Analytics and OWOX BI endpoint after the order completion.
 
-![scenario\_0\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-faq/01/public)
+![scenario\_0\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-faq/01/public)
 
 Now let's see different scenarios of submitting the transaction hit via the Measurement Protocol.
 
 **Scenario 1.** You submit the transaction hit with an undefined _qt_ parameter right after the order completion or during the preset session timeout:
 
-![scenario\_1\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-faq/02/public)
+![scenario\_1\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-faq/02/public)
 
 The transaction will be assigned to the right _Session 2_.
 
 > **Note**  
 > If the user returns to the website during the session timeout and before the request with the undefined _qt_ is submitted, then a new session will start. And the transaction will be assigned to this new session. Let's see this case in detail:  
-> ![scenario\_1-1\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-faq/03/public)  
+> ![scenario\_1-1\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-faq/03/public)  
 > \- at 9:35 the user completed _Session 2_, and the 30-minute timing started.  
 > \- at 9:40 the user returned to the website and the new _Session 5_ started.  
 > \- at 9:45 the Measurement Protocol request with undefined _qt_ was sent.  
@@ -49,19 +49,19 @@ The transaction will be assigned to the right _Session 2_.
 
 **Scenario 2. You submit the transaction hit with the undefined _qt_ parameter** in 95 minutes after the order completion:
 
-![scenario\_2\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-faq/04/public)
+![scenario\_2\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-faq/04/public)
 
 The transaction will be assigned to the wrong _Session 3_ which will be active at the moment of the request submission.
 
 **Scenario 3.** You submit the transaction hit with _qt=1800000_ (the equivalent of 30 minutes) in 95 minutes after the order completion:
 
-![scenario\_3\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-faq/05/public)
+![scenario\_3\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-faq/05/public)
 
 In this case, the transaction must be assigned to the session that was active 30 minutes before the request is submitted. Given that our user didn't have the session at that time, the analytics services will automatically create _Session 4_ for this transaction. As a result, the transaction will be assigned to the wrong _Session 4._
 
 _**Scenario 4.**_ You submit the transaction hit with _qt=2700000_ (the equivalent of 45 minutes) in 45 minutes after the order completion:
 
-![scenario\_1\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-faq/06/public)
+![scenario\_1\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-faq/06/public)
 
 In this case, the _qt_ value reflects the exact delay between the order completion and the request submission. Therefore, the transaction will be assigned to the right _Session 2_.
 
@@ -351,11 +351,11 @@ If your credentials to Google Analytics / Google BigQuery are changed or you’r
 
 **Step 2.** Click the Edit icon next to the required access record:
 
-![access\_edit1\_us.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-faq/07/public)
+![access\_edit1\_us.png](https://cdn.owox.com/plugins/streaming/hit-based-faq/07/public)
 
 **Step 3.** In the opened pop-up, select your current access or add a new one. The changes will be applied automatically.
 
-![access\_edit2\_us.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-faq/08/public)
+![access\_edit2\_us.png](https://cdn.owox.com/plugins/streaming/hit-based-faq/08/public)
 
 ## How are the data storing and unique user processing billed?
 

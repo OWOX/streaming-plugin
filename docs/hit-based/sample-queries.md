@@ -228,7 +228,7 @@ The query shows exit rate for each step of checkout.
 
 #### Visualization example
 
-![](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-sample-queries/01/public)
+![](https://cdn.owox.com/plugins/streaming/hit-based-sample-queries/01/public)
 
 #### SQL Query
 
@@ -287,7 +287,7 @@ As a result of the query you obtain the sum and the accumulated sum of orders b
 
 ### **Report Example**
 
-![](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-sample-queries/02/public)
+![](https://cdn.owox.com/plugins/streaming/hit-based-sample-queries/02/public)
 
 ### **Dynamic parameters**
 
@@ -438,7 +438,7 @@ The query shows average conversion rate for users that had at least one social 
 
 #### Visualization example
 
-![](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-sample-queries/03/public)
+![](https://cdn.owox.com/plugins/streaming/hit-based-sample-queries/03/public)
 
 #### SQL Query
 
@@ -615,7 +615,7 @@ The query shows average pageload time and server responce time by dimensions: d
 
 #### Visualization example
 
-![](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-sample-queries/04/public)
+![](https://cdn.owox.com/plugins/streaming/hit-based-sample-queries/04/public)
 
 #### SQL Query
 
