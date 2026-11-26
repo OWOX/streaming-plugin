@@ -36,11 +36,11 @@ This integration is intended for those who are using [Tealium IQ](http://teali
 
 Specify your Google Universal Analytics tag as the Scope for extension:
 
-![](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-set-up-data-collection/01/public)
+![](https://cdn.owox.com/plugins/streaming/hit-based-set-up-data-collection/01/public)
 
 1.  Set Tracker Name "owox" in Google Universal Analytics tag:
     
-    ![](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-set-up-data-collection/02/public)
+    ![](https://cdn.owox.com/plugins/streaming/hit-based-set-up-data-collection/02/public)
     
 2.  Create and publish a new version of container to finish OWOX BI Streaming settings on your website.
 
@@ -48,11 +48,11 @@ Specify your Google Universal Analytics tag as the Scope for extension:
 
 To set up tracking for AMP pages (Accelerated Mobile Pages), take the following steps in **Google Tag Manager**.
 
-1\. Create a new GTM container for AMP pages. To do that, go to the **Admin** tab, click **+** at the container column. In the container creation menu, select **AMP**:![AMP\_pages\_0.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-set-up-data-collection/03/public)
+1\. Create a new GTM container for AMP pages. To do that, go to the **Admin** tab, click **+** at the container column. In the container creation menu, select **AMP**:![AMP\_pages\_0.png](https://cdn.owox.com/plugins/streaming/hit-based-set-up-data-collection/03/public)
 
-2\. In the **Tags** menu, create tags that will be sent to Google Analytics along with the data. Here, include the custom dimension  "Page Client ID" and the trigger that fits your case. For example:![AMP\_pages\_1.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-set-up-data-collection/04/public)
+2\. In the **Tags** menu, create tags that will be sent to Google Analytics along with the data. Here, include the custom dimension  "Page Client ID" and the trigger that fits your case. For example:![AMP\_pages\_1.png](https://cdn.owox.com/plugins/streaming/hit-based-set-up-data-collection/04/public)
 
-3\. In the **Variables** menu, in the **Built-In Variables** block, click **Configure** and check all 13 variables shown in the screenshot: ![AMP\_pages\_2.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-set-up-data-collection/05/public)
+3\. In the **Variables** menu, in the **Built-In Variables** block, click **Configure** and check all 13 variables shown in the screenshot: ![AMP\_pages\_2.png](https://cdn.owox.com/plugins/streaming/hit-based-set-up-data-collection/05/public)
 
 4\. Back in the **Tags** menu, create one more tag with the **Custom Image** type. As a trigger, use the same you used for the tag that is being sent to Google Analytics. In the **Image URL** field, paste this URL:
 
@@ -60,7 +60,7 @@ To set up tracking for AMP pages (Accelerated Mobile Pages), take the following 
 
 **Note:** The URL contains a Google Analytics Tracking ID (UA-XXXXXXX-X) in two places. When copying this URL to Google Tag Manager, make sure you've changed the "UA-XXXXXXX-X" placeholder to your Tracking ID in both places.
 
-![AMP\_Tracking\_Custom\_Image\_URL\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-set-up-data-collection/06/public)
+![AMP\_Tracking\_Custom\_Image\_URL\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-set-up-data-collection/06/public)
 
 5\. Publish the container.
 

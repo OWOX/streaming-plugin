@@ -8,11 +8,11 @@ To complete [setting up a user behavior data pipeline](https://github.com/OWOX/s
 
 ### Step 1: Create _customTask_ variable
 
-1\. Go to the **Variables** > **User-Defined Variables** and click **New**.![Custom\_task\_en\_1.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/01/public)
+1\. Go to the **Variables** > **User-Defined Variables** and click **New**.![Custom\_task\_en\_1.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/01/public)
 
-2\. In the window opened, click the **Variable Configuration** block and select [**Custom JavaScript**](https://support.google.com/tagmanager/answer/6107167?hl=en) as a variable type.![Custom\_task\_en\_2.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/02/public)
+2\. In the window opened, click the **Variable Configuration** block and select [**Custom JavaScript**](https://support.google.com/tagmanager/answer/6107167?hl=en) as a variable type.![Custom\_task\_en\_2.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/02/public)
 
-3\. Name the variable as _customTask_**.** In the **Custom JavaScript** window, paste the OWOX BI tracking code.![Custom\_task\_en\_3.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/03/public)
+3\. Name the variable as _customTask_**.** In the **Custom JavaScript** window, paste the OWOX BI tracking code.![Custom\_task\_en\_3.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/03/public)
 
 You can find the code on your user behavior data pipeline under **Settings > JavaScript code for hit and session data collection** or copy it below:
 
@@ -42,9 +42,9 @@ At this step, you need to add your _customTask_ to all the Universal Analytics t
 
 1\. Go to Universal Google Analytics tag and enter the _Edit_ mode by clicking the relevant icon. 
 
-![GA\_settings\_variable\_3\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/04/public)
+![GA\_settings\_variable\_3\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/04/public)
 
-2\. Select **More settings** > **Fields to set** > **\+ Add Field**. Enter _customTask_ in the **Field name** and _{{customTask}} in the_ **Value** fields.![Custom\_task\_en\_5.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/05/public)
+2\. Select **More settings** > **Fields to set** > **\+ Add Field**. Enter _customTask_ in the **Field name** and _{{customTask}} in the_ **Value** fields.![Custom\_task\_en\_5.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/05/public)
 
 3\. Click **Save**.
 
@@ -56,25 +56,25 @@ This option requires creating the [Google Analytics Settings variable](https://s
 
 1\. Go to the **Variables** > **User-Defined Variables** and click **New**.
 
-![Custom\_task\_en\_1.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/01/public)
+![Custom\_task\_en\_1.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/01/public)
 
 2\. In the window opened, click the **Variable Configuration** block and select **Google Analytics Settings** under the **Utilities** heading.
 
-![GA\_settings\_variable\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/07/public)
+![GA\_settings\_variable\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/07/public)
 
 3\. In the variable settings, specify the **Variable name** (you can use your Tracking ID value as a name) and **Tracking ID** – an identifier of your Google Analytics property you're using to collect data.
 
 4\. Select **More settings** > **Fields to set**. Enter _customTask_ as a **Field name** and _{{customTask}}_ as a **Value**.
 
-![GA\_settings\_variable\_2\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/08/public)
+![GA\_settings\_variable\_2\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/08/public)
 
 5\. Go to Universal Google Analytics tag and enter the _Edit_ mode by clicking the relevant icon. 
 
-![GA\_settings\_variable\_3\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/04/public)
+![GA\_settings\_variable\_3\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/04/public)
 
 6\. Add the Google Analytics Settings variable to the **Google Analytics Settings** field.
 
-![GA\_settings\_variable\_4\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/10/public)
+![GA\_settings\_variable\_4\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/10/public)
 
 7\. Click **Save**.
 
@@ -86,7 +86,7 @@ After you edit and save Universal Analytics tags, make sure they work properly b
 
 To do it, [enable Preview Mode](https://support.google.com/tagmanager/answer/6107056) for the current workspace. Then, go to your website and make a few test clicks on a website page. To review the testing results, use GTM debug console window at the bottom of your browser. Select **Click** event in the left column, then switch to the **Variables** tab in the top navigation. Search for the _customTask_ variable in the list.  If the _customTask_ variable is configured properly, it will contain the value '_Function'_. 
 
-![customTask\_function.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/11/public)
+![customTask\_function.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/11/public)
 
 > If the _customTask_ variable contains the value _'Undefined'_, make sure you complete Step 1 and Step 2 described above. Please check out the possible reasons for the _customTask_ doesn't work:  
 > \- [OWOX BI code snippet](https://github.com/OWOX/streaming-plugin/blob/main/docs/hit-based/set-up-data-collection/owox-bi-tracking-code-integration-with-google-tag-manager.md) is copied incorrectly into the _customTask_;  
@@ -99,11 +99,11 @@ If the GTM tags are configured properly, publish the container. 
 
 Then go to your user behavior data pipeline page in OWOX BI and click the specified Google BigQuery dataset link.
 
-![Custom\_task\_en\_6.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/12/public)
+![Custom\_task\_en\_6.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/12/public)
 
 If the code is integrated correctly, a _"streaming\_"_ table will appear in the dataset. The table should receive first hit data within 2 through 5 minutes after you've updated your Google Tag Manager container.
 
-In 24 hours after the code integration, you will see the _Data collected_ status next to the previous day's statistics under the **Hits** tab.![Custom\_task\_en\_7.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/13/public)
+In 24 hours after the code integration, you will see the _Data collected_ status next to the previous day's statistics under the **Hits** tab.![Custom\_task\_en\_7.png](https://cdn.owox.com/plugins/streaming/hit-based-owox-bi-tracking-code-integration-with-google-tag-manager/13/public)
 
 After another 24 hours, you'll see a notification about the session data collected under the **Sessions** tab. The session data will also be available in your Google BigQuery dataset in a separate table.
 

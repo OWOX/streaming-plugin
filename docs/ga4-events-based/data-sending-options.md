@@ -30,70 +30,70 @@ Before configuring data collection through the Google Tag (previously named GA4 
 
 1.1. Open Google Analytics 4 and choose your Property. Then go to the **Admin** page and open the "**Data streams**" subpage.
 
-![01.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/01/public)
+![01.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/01/public)
 
 1.2. Click the "**Add stream**" button and select "**Web**".
 
-![02.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/02/public)
+![02.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/02/public)
 
 1.3. Specify the name of the web stream **OWOX GA4**
 
-![04.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/03/public)
+![04.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/03/public)
 
 Fill in other settings and hit the button "**Create stream**".
 
 After that, you will be redirected to the new stream page, where you will see the following message. This message is expected, just ignore it.
 
-![image\_\_1\_.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/04/public)
+![image\_\_1\_.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/04/public)
 
 1.4. (Optional) If Custom events are specified in the settings of the current web stream, then they must be duplicated in the newly created OWOX GA4 web stream.
 
-![image.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/05/public)
+![image.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/05/public)
 
 #### Step 2. Creating a new Google tag in Google Tag Manager
 
 2.1. Open the **Google Tag Manager** and go to the **Tags** section. Create a new Google tag by clicking on the '**New**' button.
 
-![01.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/06/public)
+![01.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/06/public)
 
 2.2. Click on the '**Tag Configuration**' section.
 
-![02.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/07/public)
+![02.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/07/public)
 
 2.3. Choose the '**Google Analytics**' tag type.
 
-![03.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/08/public)
+![03.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/08/public)
 
 2.4. Choose the '**Google Tag**'.
 
-![04.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/09/public)
+![04.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/09/public)
 
 2.5. Name the tag **OWOX GA4 Configuration**.
 
-![05.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/10/public)
+![05.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/10/public)
 
 2.6. Specify the **same trigger** that is specified for the existing Google tag. See the screenshot below just as an example (choose your firing triggers):
 
-![06.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/11/public)
+![06.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/11/public)
 
 2.7. Specify the MEASUREMENT ID from the previously created **OWOX GA4** web stream.
 
-![07.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/12/public)
+![07.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/12/public)
 
 2.8. Open the “**Configuration settings**” line. And add a new parameter '**server\_container\_url**':
 
-![08.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/13/public)
+![08.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/13/public)
 
 2.9. Go to your Steaming page, open the **Settings** tab, and copy the URL (`'https://streaming.bi.owox.com/ga4/...'`') from the '**Website data stream**' section:
 
-![16.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/14/public)
+![16.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/14/public)
 
 > **Note**  
 > To create a new GA4 event-based web streaming, follow [this step-by-step guide](https://github.com/OWOX/streaming-plugin/blob/main/docs/ga4-events-based/setup.md#how-to-set-up-ga4-event-based-web-streaming-client-side--server-side).
 
 2.10. Paste this link in the “**Value**” field:
 
-![09.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/15/public)
+![09.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/15/public)
 
 > **Note**  
 > In the Configuration settings, you can use 'Configuration Settings Variable' instead of adding manually new parameter. [Learn more about this type of variable](https://support.google.com/analytics/answer/13438166?hl=en).
@@ -101,13 +101,13 @@ After that, you will be redirected to the new stream page, where you will see th
 2.11. Click the '**Save**' button.
 
 > **IMPORTANT**  
-> Use your new 'OWOX GA4 Configuration' tag only for OWOX BI Streaming.![googletag.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/16/public) To check it, please go to the Webstream details page, find the Google Tag section and open Configure Tag Settings. If you see that the web stream is connected to another Google Tag, instead of the OWOX GA4 Configuration tag, please create a new web stream to ensure that the OWOX GA4 Configuration tag is connected only to OWOX BI Streaming.
+> Use your new 'OWOX GA4 Configuration' tag only for OWOX BI Streaming.![googletag.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/16/public) To check it, please go to the Webstream details page, find the Google Tag section and open Configure Tag Settings. If you see that the web stream is connected to another Google Tag, instead of the OWOX GA4 Configuration tag, please create a new web stream to ensure that the OWOX GA4 Configuration tag is connected only to OWOX BI Streaming.
 
 #### Step 3 (optional). Setting up custom events for OWOX BI Streaming
 
 The Google Tag (previously named GA4 Configuration tag) only includes [automatically collected events](https://support.google.com/analytics/answer/9234069?hl=en) and [GA4 Enhanced Measurement events](https://support.google.com/analytics/answer/9216061?sjid=9354740649059395789-EU) that are active in your Web stream in GA4. **For any additional custom events**, such as e-commerce events, **you'll need to create separate duplicate tags with the same triggers** and specify the OWOX GA4 Configuration tag**.** Here's an example of a list of tags:
 
-![38new.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/17/public)
+![38new.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/17/public)
 
 > **Note**  
 > Google implements Event settings variables in Google Tag Manager, so you can easily manage all your custom events. [Learn more about how to define event-level settings](https://support.google.com/analytics/answer/13438771?hl=en&ref_topic=12403939&sjid=7266959550788531338-EU).
@@ -136,7 +136,7 @@ Before you start sending events, check the following statements:  
 
 -   Use a **unique** access point URL, e.g. 'https://streaming.bi.owox.com/ga4/…**/mp**'. Note that there is no slash at the end.  
     This URL you can find on the **Settings tab** on the Streaming page:  
-    ![17.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/18/public)
+    ![17.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/18/public)
 -   The access point processes each request sent to it and stores it in the `debug_info.raw_request` field as it is without changes.
 -   You can send **any events**, for example:
     -   Regardless of when these events happened (events from yesterday can be sent today with the actual date and time).
@@ -229,7 +229,7 @@ Replace `'G-XXXXXX-2'` with the ’MEASUREMENT ID’ of the new ‘OWOX BI Strea
 
 Replace `'https://streaming.bi.owox.com/ga4/...'` with the full URL, which you can find on the **Settings tab** of your Streaming page:
 
-![16.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/19/public)
+![16.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/19/public)
 
 > **Note**  
 > We also recommend using the `'groups'` parameter. This will help you with sending custom events in the next step.
@@ -357,13 +357,13 @@ Before configuring data collection through the Custom HTML Tag, check the follow
 
 Paste it to the ‘HTML’ section. Find ‘**https://streaming.bi.owox.com/ga4/…**’ and replace it with a full link to the OWOX BI access point, which you can copy from the **Settings tab** on the Streaming page:
 
-![16.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/20/public)
+![16.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/20/public)
 
 1.4. Add the ‘All pages’ firing trigger.
 
 1.5. And you will get settings like on the screen below:
 
-![01\_new.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/21/public)
+![01\_new.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/21/public)
 
 Click the ‘Save’ button and go to the next step.
 
@@ -375,7 +375,7 @@ Click the ‘Save’ button and go to the next step.
 
 Specify your new tag ‘**OWOX GA4 Custom HTML**’.
 
-![02.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/22/public)
+![02.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/22/public)
 
 2.3. Save the changes.
 
@@ -405,27 +405,27 @@ Before you begin configuring data collection using the Google Tag (previously kn
 
 **1.1.** Open the [OWOX BI GA4 Web Streaming template tag](https://tagmanager.google.com/gallery/#/owners/OWOX/templates/sgtm-owox-ga4-bigquery) and click ‘**Add to workspace**’.
 
-![01.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/23/public)
+![01.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/23/public)
 
 Alternatively, follow these steps:
 
 -   Open your GTM account and select the server-side Container.
 -   Navigate to the Templates page. Under the ‘T**ag Templates**’ section, click ‘**Search Gallery**’.  
-    ![02.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/24/public)
+    ![02.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/24/public)
 -   Use the search term ‘**owox**’ to find the ‘**OWOX BI GA4 Web Streaming To Google BigQuery**’ template by OWOX.  
-    ![03.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/25/public)
+    ![03.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/25/public)
 -   Click ‘**Add to workspace**’.  
-    ![04.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/26/public)
+    ![04.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/26/public)
 
 **1.2.** Confirm your action to add the template to your Workspace.
 
-![05.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/27/public)
+![05.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/27/public)
 
 #### Step 2: Create and Configure a New Tag
 
 **2.1.** In the GTM interface, go to **Tags** in the left navigation menu and click ‘**New**’.
 
-![06.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/28/public)
+![06.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/28/public)
 
 **2.2.** Name your new tag (choose any descriptive name you prefer).
 
@@ -433,15 +433,15 @@ Alternatively, follow these steps:
 
 **2.3.1.** Choose the **tag type**: ‘OWOX BI GA4 Web Streaming To Google BigQuery’.
 
-![07.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/29/public)
+![07.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/29/public)
 
 **2.3.2.** In the ‘**Data Stream URL**’ field, paste your **OWOX BI Access Point URL**. You can copy this URL from the OWOX BI Streaming settings page.
 
-![08.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/30/public)
+![08.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/30/public)
 
 **2.4.** In the Triggering section of your tag, set up a trigger. **Select a trigger** appropriate to the events you want to track.
 
-![09.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/31/public)
+![09.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/31/public)
 
 > **Important:**  
 > To ensure accurate data collection, use the same triggers you use for your GA4 tag. For example, if your GA4 tag fires on page views, button clicks, or form submissions, your OWOX BI tag should use those same triggers.
@@ -450,7 +450,7 @@ Alternatively, follow these steps:
 
 **3.1.** Enable Preview Mode. Click ‘**Preview**’ in the top-right corner of your sGTM container.
 
-![10.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/32/public)
+![10.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/32/public)
 
 **3.2.** Test Thoroughly. Trigger the events or conditions that should fire your tag. Use the sGTM debug view to confirm that the tag is firing correctly and that the expected data is being sent.
 
@@ -458,6 +458,6 @@ Alternatively, follow these steps:
 
 Once you’ve successfully tested the tag, click ‘Submit’ in the top-right corner to publish the changes to your live container.
 
-![11.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-data-sending-options/33/public)
+![11.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-data-sending-options/33/public)
 
 If you have any questions or need assistance, our Support team is here to help! Contact us at [bi@owox.com](mailto:bi@owox.com).

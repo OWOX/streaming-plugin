@@ -390,6 +390,6 @@ However, there may be cases when you need to change one of the streaming setting
 
 To delete the existing streaming, click the “...” icon and choose the “**Delete**” option.
 
-![01-delete.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-faq/01/public)
+![01-delete.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-faq/01/public)
 
 To create a new event-based streaming, you can use [this step-by-step guide](https://github.com/OWOX/streaming-plugin/blob/main/docs/ga4-events-based/setup.md#how-to-set-up-ga4-event-based-web-streaming-client-side--server-side).

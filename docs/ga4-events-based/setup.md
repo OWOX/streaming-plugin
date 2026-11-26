@@ -29,15 +29,15 @@ OWOX BI offers two types of event-based streaming: **Client-side** and **Server-
 
 **Step 1.** On the [Workspace page](https://bi.owox.com/ui/app/none/workspace), click the ‘**New**’ button and select the Streaming option in a drop-down menu:
 
-![01.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/01/public)
+![01.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/01/public)
 
 Or, if your workspace page is empty, you will see a screen with three major blocks. Click the ‘**\+ New streaming**’ button.
 
-![02.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/02/public)
+![02.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/02/public)
 
 **Step 2.** As a streaming type, select ‘**GA4 Event-based web streaming**’:
 
-![03.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/03/public)
+![03.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/03/public)
 
 Click the '**Create & Setup**' button.
 
@@ -45,7 +45,7 @@ Click the '**Create & Setup**' button.
 
 To start collecting user behavior data from your website, you'll need to configure streaming settings, including the timezone, and destination dataset.
 
-![04.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/04/public)
+![04.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/04/public)
 
 > **HOT TO CHANGE STREAMING TYPE**  
 > If you need to switch from Client-Side to Server-Side streaming, please contact our support team at [bi@owox.com](mailto:bi@owox.com).
@@ -54,51 +54,51 @@ To start collecting user behavior data from your website, you'll need to configu
 
 4.1. Click on the ‘**Timezone**’ section.
 
-![05.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/05/public)
+![05.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/05/public)
 
 4.2. In the opened dialog, specify the timezone
 
-![06.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/06/public)
+![06.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/06/public)
 
 4.3. Click the ‘**Save**’ button to apply your changes.
 
-![07.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/07/public)
+![07.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/07/public)
 
 4.4. If all is done correctly, the dialog will close, and in the ‘Timezone’ section you will see a green marker with the timezone title.
 
-![08.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/08/public)
+![08.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/08/public)
 
 **Step 5.** Set up a destination dataset.
 
 5.1. Click on the ‘**Destination dataset**’ section.
 
-![09.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/09/public)
+![09.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/09/public)
 
 5.2. In the opened dialog, where you can choose one of the shared datasets in the list. If this list is empty, or you didn’t find the desired dataset, you can click the ‘**Grant access…**’ button and add a new dataset [following the instructions](https://www.owox.com/docs/storages/google-bigquery/).
 
-![10.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/10/public)
+![10.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/10/public)
 
 Ensure the dataset you select or create does not already contain `events_intraday_*` tables to avoid any data overlap. Read more about [setting up multiple Streaming instances for accurate data consumption](https://github.com/OWOX/streaming-plugin/blob/main/docs/ga4-events-based/faq.md#how-to-set-up-multiple-owox-bi-streamings-for-accurate-data-consumption).
 
 5.3. Click the ‘**Save**’ button to close the second dialog.
 
-![11.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/11/public)
+![11.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/11/public)
 
 5.4. If all is done correctly, the dialog will close, and in the ‘Destination dataset’ section you will see a green marker with the name project.dataset.
 
-![12.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/12/public)
+![12.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/12/public)
 
 **Step 6.** Activate this pipeline by clicking on the ‘**Activate**’ button.
 
-![13.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/13/public)
+![13.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/13/public)
 
 The streaming will change status from ‘Draft’ to ‘Active’.
 
-![14.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/14/public)
+![14.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/14/public)
 
 **Step 7.** Open the '**Data sending options**’ section.
 
-![15.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/15/public)
+![15.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/15/public)
 
 Choose how to send data from your website to the OWOX BI access point and follow the instructions below:
 
@@ -135,13 +135,13 @@ Before you begin, ensure you meet the following prerequisites:
 
 Start by setting up Client-Side Streaming. For detailed instructions, follow our [How to Set Up Client-Side Streaming](https://github.com/OWOX/streaming-plugin/blob/main/docs/ga4-events-based/setup.md#how-to-set-up-ga4-event-based-web-streaming-client-side--server-side) guide.
 
-![14-newwww.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/16/public)
+![14-newwww.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/16/public)
 
 #### Step 2: Switch to Server-Side Streaming
 
 Contact the OWOX BI Support Team in chat or at [bi@owox.com](mailto:bi@owox.com) and r**equest to switch your streaming type from Client-Side to Server-Side**. Once confirmed, you can proceed with the next steps.
 
-![14-newwww-server-side.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/17/public)
+![14-newwww-server-side.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/17/public)
 
 #### Step 3: Configure Your Server
 
@@ -150,7 +150,7 @@ Contact the OWOX BI Support Team in chat or at [bi@owox.com](mailto:bi@owox.com)
 Set up your server, CDN, or load balancer to route traffic from your website to the OWOX Streaming endpoint.
 
 -   Use the endpoint URL provided by OWOX BI: `{https://streaming.bi.owox.com/ga4/...}`  
-    ![14-newwww-server-side2222.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/18/public)
+    ![14-newwww-server-side2222.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/18/public)
 -   Create a path on your domain: For example, set up `www.example.com/owox` to forward traffic to the OWOX endpoint.
 
 > **Example Workflow:**  
@@ -214,7 +214,7 @@ Go to your domain administration panel and add a new DNS entry with the followin
 
 Within 1-24 hours, the new subdomain **owox**.your-domain.com should resolve to the specified IP address. You can check it out at [nslookup.io](https://www.nslookup.io/). If everything is ok, you will see the info below:
 
-![Frame\_2021.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/ga4-events-based-setup/19/public)
+![Frame\_2021.png](https://cdn.owox.com/plugins/streaming/ga4-events-based-setup/19/public)
 
 ### Step 3. Setting up data collection
 

@@ -19,7 +19,7 @@ Before you create a user behavior data pipeline, upload data from all your Googl
 
 If you didn't connect a new Google Ads to Data Transfer, you can write to us at [bi@owox.com](mailto:bi@owox.com) and we'll help you update your data.
 
-You can view all your linked Google Ads accounts in Google Analytics. Go to **Admin** → **View settings**:![image9.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/01/public)
+You can view all your linked Google Ads accounts in Google Analytics. Go to **Admin** → **View settings**:![image9.png](https://cdn.owox.com/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/01/public)
 
 ## How to get these Google Ads reports
 
@@ -83,19 +83,19 @@ Data uploading will start once you save the settings or at the scheduled time.
 
 \- On the **Settings tab**, in the **Session data collection** section, click **Change settings**.
 
-**![edit1\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/02/public)**
+**![edit1\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/02/public)**
 
 \- On the **Settings for session collection based on raw hit data** screen, switch on **Google Ads reports** and click **Change settings**.
 
-**![edit2\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/03/public)**
+**![edit2\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/03/public)**
 
 \- On the opened screen **Data from Google Ads campaigns with auto-tagging**, set the **Data upload priority** to **Auto-tagging (GCLID values)**, and **BigQuery Data Transfer** as a **Google Ads reporting** **method**. Then specify the BigQuery project and dataset BigQuery Data Transfer will upload data to. Confirm your selection by clicking **Save Settings** on the current screen. 
 
-![save1\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/04/public)
+![save1\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/04/public)
 
 \- Once you get back to the **Settings for session collection based on raw hit data** screen, click **Save settings** one more time to apply the changes to your pipeline settings.
 
-![save2\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/05/public)
+![save2\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/05/public)
 
 ## Upload reports using Google Ads scripts
 
@@ -107,9 +107,9 @@ You can use the following two scripts to export Google Ads reports to BigQuery:
 **How to add a script?**
 
 1.  In Google Ads, in the upper-right of the interface, click **Tools**.
-2.  In the **Bulk Actions** column, click **Scripts**: ![Ads\_scripts\_1-2.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/06/public)
-3.  Click the **plus** button to add a script: ![Ads\_scripts\_3.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/07/public)
-4.  In the script field, copy and paste the script from below the screenshot: ![Ads\_scripts\_4.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/08/public)
+2.  In the **Bulk Actions** column, click **Scripts**: ![Ads\_scripts\_1-2.png](https://cdn.owox.com/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/06/public)
+3.  Click the **plus** button to add a script: ![Ads\_scripts\_3.png](https://cdn.owox.com/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/07/public)
+4.  In the script field, copy and paste the script from below the screenshot: ![Ads\_scripts\_4.png](https://cdn.owox.com/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/08/public)
 
 The script example for a single account (not MCC). Copy it and replace **BQ project name** and **Your email** with the name of your BigQuery project and your email accordingly:
 
@@ -581,8 +581,8 @@ function createTableRows(jobIds) {
 
 To do that:
 
-1.  In Google Ads, click **Advanced APIs**: ![Ads\_scripts\_5.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/09/public)
-2.  Select **BigQuery**: ![Ads\_scripts\_6.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/10/public)
+1.  In Google Ads, click **Advanced APIs**: ![Ads\_scripts\_5.png](https://cdn.owox.com/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/09/public)
+2.  Select **BigQuery**: ![Ads\_scripts\_6.png](https://cdn.owox.com/plugins/streaming/hit-based-setting-up-raw-data-collection-about-google-ads-campaigns-with-auto-tagging/10/public)
 3.  Follow the link and enable BigQuery API in the API library.
 4.  Click **Save**. Done! Google BigQuery API is activated and the script you've set up will collect Google Ads reports to BigQuery.
 

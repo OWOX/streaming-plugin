@@ -69,7 +69,7 @@ Basically, this one Client ID will be treated as two different users, one for ea
 
 ### Recommendations for setting up passing the User ID parameter to the 'owoxbi\_sessions\_' tables
 
-To upload the `user.Id` parameter data via Google Tag Manager, you need to create a [user-defined variable](https://support.google.com/tagmanager/answer/7683362) that will generate the `user.Id` parameter value. After that, go to your tag settings and in **Fields to Set** select `user.Id` as **Field name**:![image6.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-how-data-is-collected/01/public)
+To upload the `user.Id` parameter data via Google Tag Manager, you need to create a [user-defined variable](https://support.google.com/tagmanager/answer/7683362) that will generate the `user.Id` parameter value. After that, go to your tag settings and in **Fields to Set** select `user.Id` as **Field name**:![image6.png](https://cdn.owox.com/plugins/streaming/hit-based-how-data-is-collected/01/public)
 
 In the **Value** field, set the variable that generates the `user.Id` value.
 
@@ -84,15 +84,15 @@ The standard Google Analytics algorithm doesn’t reveal user identifiers at the
 
 1\. On the **Admin** page, find the **Custom definitions** block and click **Custom dimensions**:
 
-![Admin - custom definitions](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-how-data-is-collected/02/public)
+![Admin - custom definitions](https://cdn.owox.com/plugins/streaming/hit-based-how-data-is-collected/02/public)
 
 2\. Click **New custom dimension**:
 
-![New custom dimension](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-how-data-is-collected/03/public)
+![New custom dimension](https://cdn.owox.com/plugins/streaming/hit-based-how-data-is-collected/03/public)
 
 3\. Add the dimension name, set the **Scope** to _User_, and click **Create**:
 
-![custom dimension settings](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-how-data-is-collected/04/public)
+![custom dimension settings](https://cdn.owox.com/plugins/streaming/hit-based-how-data-is-collected/04/public)
 
 #### Step 2. Add the custom dimension in OWOX BI
 
@@ -100,11 +100,11 @@ The standard Google Analytics algorithm doesn’t reveal user identifiers at the
 
 2\. In the **Session data collection** block, make sure you have the **Based on Google Analytics** option selected, and click **Edit settings**:
 
-![Google analytics settings data collection](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-how-data-is-collected/05/public)
+![Google analytics settings data collection](https://cdn.owox.com/plugins/streaming/hit-based-how-data-is-collected/05/public)
 
 3\. In the **Select User ID** drop-down list, select the custom dimension you have created:
 
-![GA custom dimension user id session data](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-how-data-is-collected/06/public)
+![GA custom dimension user id session data](https://cdn.owox.com/plugins/streaming/hit-based-how-data-is-collected/06/public)
 
 That’s it. Now you get User ID values in the created custom dimension.
 
@@ -269,7 +269,7 @@ When collecting user behavior data from your website in the Google Analytics→G
 
 In data tables, the ID values are stored in the `userOwoxId` field:
 
-![OWOX\_User\_ID.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-how-data-is-collected/07/public)
+![OWOX\_User\_ID.png](https://cdn.owox.com/plugins/streaming/hit-based-how-data-is-collected/07/public)
 
 > **Note:**  
 > Collecting OWOX BI User ID is impossible when you collect [session data based on Google Analytics data](https://github.com/OWOX/streaming-plugin/blob/main/docs/hit-based/how-data-is-collected.md#collecting-and-updating-the-google-analytics-based-session-data).
@@ -312,7 +312,7 @@ If you want to turn it off:
 
 2\. Uncheck **Collect OWOX User ID**.
 
-![OWOX\_User\_ID\_en.png](https://imagedelivery.net/zKr-4bdC5CBGL2DuuEmvYw/plugins/streaming/hit-based-how-data-is-collected/08/public)
+![OWOX\_User\_ID\_en.png](https://cdn.owox.com/plugins/streaming/hit-based-how-data-is-collected/08/public)
 
 ### Restrictions
 
